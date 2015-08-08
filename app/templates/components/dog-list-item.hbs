@@ -1,6 +1,11 @@
-<li>
+<div class="dog-list-item" style="background-image: url('{{dog.image_url}}');"   >
   {{#link-to 'dogs.show' dog}}
-    <img src="{{dog.image_url}}" />
-    {{dog.name}}
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        {{dog.name}}
+      </div>
+        
+   
+    </div>
   {{/link-to}}
-</li>
+</div>
