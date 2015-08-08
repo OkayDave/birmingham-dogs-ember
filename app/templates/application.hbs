@@ -1,9 +1,40 @@
-<h2>Dogs</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>Adopt a Dog in Birmingham</h1>
+        <p>Go on, it'll be lovely.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3">
+      <!-- nav -->
+      {{side-nav}}
+    </div>
 
-<ul>
-  <li>{{link-to 'Home' 'index'}}</li>
-  <li>{{link-to 'Dogs' 'dogs'}}</li>
-</ul>
-<hr />
+    <div class="col-md-9">
+      <!-- content -->
+      {{outlet}}
+    </div>
+  </div>
 
-{{outlet}}
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
