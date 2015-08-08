@@ -1,15 +1,5 @@
-<ul>
-  {{#each dog in model}}
-    <li>
-      {{#link-to 'dogs.show' dog}}
-        {{dog.name}}
-      {{/link-to}}
-    </li>
+{{dog-list dogs=model}}
 
-  {{else}}
 
-  <li>No contacts found.</li>
-  {{/each}}
+{{outlet}}
 
-</ul>
- {{outlet}}
