@@ -13,6 +13,9 @@ Router.map(function() {
     this.route('show', {path: '/:shelter_id'});
 
   });
+  this.route('breeds', {path: "/breeds"}, function() {
+    this.route('show', {path: "/:breed_id"});
+  });
 });
 
 export default Router;
