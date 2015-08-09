@@ -9,6 +9,10 @@ Router.map(function() {
   this.route('dogs', {path: "/dogs"}, function() {
     this.route('show', {path: '/:dog_id'});
   });
+  this.route('shelters', {path: "/shelters"}, function() {
+    this.route('show', {path: '/:shelter_id'});
+
+  });
 });
 
 export default Router;

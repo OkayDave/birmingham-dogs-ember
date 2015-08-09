@@ -10,6 +10,6 @@ export default DS.Model.extend({
   image_url: DS.attr('string'),
   slug: DS.attr('string'),
 
-  dogs: DS.hasMany('dog', {async: true})
+  dogs: DS.hasMany('dog', {async: true, inverse: 'shelter'})
   
 });

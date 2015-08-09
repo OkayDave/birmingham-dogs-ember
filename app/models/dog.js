@@ -19,7 +19,7 @@ export default DS.Model.extend({
   updated_at: DS.attr('date'),
 
 
-  shelter: DS.belongsTo('shelter', {async: true}),
+  shelter: DS.belongsTo('shelter', {async: true, inverse: 'dogs'}),
   breed_id: DS.attr('number')
   
     

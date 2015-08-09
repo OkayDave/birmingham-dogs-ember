@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <h2>{{model.name}}</h2>
+  </div>
+
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{model.image_url}}" alt="{{model.name}}" class="shelter-image" />
+  </div>
+
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {{{format-text model.description}}}
+        <hr />
+
+        <a href="{{unbound model.url}}" target="_blank" class="btn btn-large btn-info">
+          Visit {{model.name}} Website
+        </a>
+
+        <a href="{{unbound model.contact_details}}" target="_blank" class="btn btn-large">
+          {{model.name}} Contact Details
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h3>Dogs at {{model.name}}</h3>
+
+    <hr>
+  </div>
+
+</div>
+
+<div class="row">
+  {{dog-list dogs=model.dogs}}
+</div>
+
