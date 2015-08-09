@@ -28,4 +28,9 @@
 
 img.dog-image {
   max-width: 100%;
+  border: 1px solid black;
+}
+
+div.ember-view {
+  /*display: inline;*/
 }

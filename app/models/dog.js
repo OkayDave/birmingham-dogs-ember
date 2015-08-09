@@ -7,6 +7,20 @@ export default DS.Model.extend({
   age_string: DS.attr('string'),
   image_url: DS.attr('string'),
   shelter_url: DS.attr('string'),
+  date_of_birth: DS.attr('string'),
+  reference: DS.attr('string'),
+  size: DS.attr('string'),
+  home_tested: DS.attr('string'),
+  child_friendly: DS.attr('string'),
+  status: DS.attr('string'),
+  date_added: DS.attr('date'),
+  slug: DS.attr('string'),
+  created_at: DS.attr('date'),
+  updated_at: DS.attr('date'),
+
+
+  shelter_id: DS.attr('number'),
+  breed_id: DS.attr('number')
   
     
 });
