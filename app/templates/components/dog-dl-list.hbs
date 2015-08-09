@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-4">
-    <dl class="dl-horizontal">
+    <dl>
       {{#if dog.age_string}}{{dog-dl-item key="Age" value=dog.age_string}}{{/if}}
       {{#if dog.date_of_birth}}{{dog-dl-item key="Date of Birth" value=dog.date_of_birth}}{{/if}}
       {{#if dog.is_female}}{{dog-dl-item key="Female?" value=dog.is_female}}{{/if}}
@@ -9,7 +9,7 @@
   </div>
 
   <div class="col-md-4">
-    <dl class="dl-horizontal">
+    <dl>
       {{#if dog.reference}}{{dog-dl-item key="Shelter reference" value=dog.reference}}{{/if}}
       {{#if dog.size}}{{dog-dl-item key="Size" value=dog.size}}{{/if}}
       {{#if dog.date_added}}{{dog-dl-item key="Date added" value=dog.date_added}}{{/if}}

@@ -34,3 +34,7 @@ img.dog-image {
 div.ember-view {
   /*display: inline;*/
 }
+
+dd {
+  margin-bottom: 10px;
+}
