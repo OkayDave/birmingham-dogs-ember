@@ -6,7 +6,7 @@
 </div>
 
 <div class="row">
-  {{#each breed in model}}
+  {{#each model as |breed|}}
     <div class="col-md-4">  
       <div class="dog-list-item" style="background-image: url('{{breed.image_url}}')">
         {{#link-to 'breeds.show' breed}}
