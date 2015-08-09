@@ -1,2 +1,18 @@
-{{dog.name}}
-{{model.name}}
+<div class="row">
+  <div class="col-md-12">
+    <h2>{{model.name}}</h2>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{model.image_url}}" alt="{{model.name}}" class="dog-image"/>
+
+  </div>
+
+  <div class="col-md-6">
+    {{{format-text model.description}}}
+  </div>
+
+</div>
