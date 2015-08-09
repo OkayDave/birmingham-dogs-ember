@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', {path: "/"}, function() {});
+  
   this.route('dogs', {path: "/dogs"}, function() {
     this.route('show', {path: '/:dog_id'});
   });
