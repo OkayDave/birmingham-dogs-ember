@@ -21,7 +21,8 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'connect-src': "'self' *",
       'font-src': "'self' http://fonts.gstatic.com",
-      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com'"
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com'",
+      'image-src': "'self' *"
     }
   };
 
