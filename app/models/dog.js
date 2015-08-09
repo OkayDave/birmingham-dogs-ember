@@ -20,7 +20,7 @@ export default DS.Model.extend({
 
 
   shelter: DS.belongsTo('shelter', {async: true, inverse: 'dogs'}),
-  breed_id: DS.attr('number')
+  breed: DS.belongsTo('breed', {async: true, inverse: 'dogs'})
   
     
 });
