@@ -1,19 +1,19 @@
 <ul class="nav nav-pills nav-stacked">
 
   {{#link-to 'home' tagName="li" }}
-    <a {{bind-attr href="home"}}>Home</a> 
+    {{#link-to 'home'}}Home{{/link-to}}
   {{/link-to}}
 
   {{#link-to 'dogs' tagName="li"}}
-    <a {{bind-attr href="dogs"}}>Dogs</a>     
+    {{#link-to 'dogs'}}Dogs{{/link-to}}
   {{/link-to}}
 
   {{#link-to 'shelters' tagName="li"}}
-    <a {{bind-attr href="shelters"}}>Shelters</a>      
+    {{#link-to 'shelters'}}Shelters{{/link-to}}
   {{/link-to}} 
 
   {{#link-to 'breeds' tagName="li"}}
-    <a {{bind-attr href="breeds"}}>Breeds</a> 
+    {{#link-to 'breeds'}}Breeds{{/link-to}}
   {{/link-to}}
 
 </ul>
