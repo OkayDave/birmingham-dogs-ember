@@ -16,7 +16,9 @@
 
   <div class="col-md-6">
     {{{format-text model.description}}}
-    {{model.shelter.name}}
+
+    <p><strong>Shelter:</strong> {{link-to model.shelter.name 'shelters.show' model.shelter}}</p>
+    <p><strong>Breed:</strong> {{link-to model.breed.name 'breeds.show' model.breed}}</p>
     <hr />
 
     {{dog-shelter-button dog=model}}
